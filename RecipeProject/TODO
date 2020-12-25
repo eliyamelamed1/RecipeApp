@@ -1,0 +1,14 @@
+API-Tests:
+    Login: 
+        redirect to home page after logged in ,
+        redirect to home page when authenticated,
+
+
+Authentication:
+    if the page refresh after logout, the user get logged in
+
+    when an authenticated user visit the login page the page renders for a second 
+
+Email:
+    set up email service in settings to send mail
+

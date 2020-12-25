@@ -67,7 +67,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
-# TODO + add email
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -88,12 +87,14 @@ DATABASES = {
 # email account: supertestuser420
 # email password: 852456tT
 # app password: aopflfyuqlpptjof
-EMAIL_BACKEND = 'django.core.mail.backend.smtp.EmailBackend'
-EMAIL_HOST = 'smpt.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = '#'
-EMAIL_HOST_PASSWORD = 'aopflfyuqlpptjof'
-EMAIL_USE_TLS = True
+
+# EMAIL_BACKEND = 'django.core.mail.backend.smtp.EmailBackend'
+# EMAIL_HOST = 'smpt.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'supertestuser420@gmail.com'
+# EMAIL_HOST_PASSWORD = 'aopflfyuqlpptjof'
+# EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Password validation
